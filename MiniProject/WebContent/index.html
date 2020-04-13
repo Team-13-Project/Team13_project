@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <title>Trainer Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Add more script here -->
+
+</head>
+
+<body>
+    <form id="add_Trainer_Form">
+        <!-- Nav Bar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Training App</a>
+        </nav>
+        <!-- Nav Bar end -->
+
+        <!-- Form starting -->
+        <div class="jumbotron jumbotron-fluid" id="add_Trainer_Container">
+            <div class="container">
+                <div>
+                    <h4>Trainer Login</h4>
+                </div>
+                <br>
+                <div class="form">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer01">Email Id</label>
+                        <input type="email" class="form-control" id="email_Id" name="email_Id"
+                            placeholder="Enter Email Id" value="" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer02">Password</label>
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Enter Password" value="" required>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <button class="btn btn-primary" id="add_trainer_submit" type="button">Submit</button>
+                </div>
+            </div>
+    </form>
+    <!-- Form ends here -->
+</body>
+
+</html>

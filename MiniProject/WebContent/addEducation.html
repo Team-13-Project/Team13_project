@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <title>Add Education</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/Education.js"></script>
+    <script src="js/EducationService.js"></script>
+    <script src="js/EducationUtil.js"></script>
+    <script src="js/EducationController.js"></script>
+</head>
+
+<body>
+    <form id="add_Education_Form">
+        <!-- Nav bar starts -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="trainerHome.html">Training App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item addemp">
+                        <a class="nav-link" href="#" id="addEducationPage">Add Education</span></a>
+                    </li>
+                    <li class="nav-item reportemp">
+                        <a class="nav-link" href="#" id="viewEducationPage">View Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid" id="add_Education_Container">
+            <div class="container">
+                <!-- nav bar ends  -->
+                <div>
+                    <h4>Add Education Information</h4>
+                </div>
+                <br>
+
+                <!-- first row -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="institute">Institute Name</label>
+                        <input type="text" class="form-control" id="institute" name="institute_name"
+                            placeholder="Institute name" value="" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="degree">Degree</label>
+                        <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter Degree"
+                            value="" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="specialization">Specialization</label>
+                        <input type="text" class="form-control" id="specialization" name="specialization"
+                            placeholder="Enter Specialization" value="" required>
+                    </div>
+                </div>
+
+                <!-- Second row -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="year">Start Year</label>
+                        <input type="number" class="form-control" id="start_year" name="start_year"
+                            placeholder="Enter Start Year" value="">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="year">End Year</label>
+                        <input type="number" class="form-control" id="end_year" name="end_year"
+                            placeholder="Enter End Year" value="">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="duration">Course Duration</label>
+                        <input type="number" class="form-control" id="duration" name="duration"
+                            placeholder="Enter Course Duration" value="" required>
+                    </div>
+                </div>
+
+                <!-- Third row -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="university">Board Or University</label>
+                        <input type="text" class="form-control" id="university" name="university"
+                            placeholder="Enter Board/University" value="">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="percentage">Percentage</label>
+                        <input type="number" class="form-control" id="percentage" name="percentage"
+                            placeholder="Enter Percentage" value="" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter City" value=""
+                            required>
+                    </div>
+                </div>
+
+                <!-- Fourth row -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" name="state" placeholder="Enter State"
+                            value="">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" placeholder="Enter Country"
+                            value="">
+                    </div>
+                </div>
+
+
+
+                <button class="btn btn-success" id="add_education_submit" type="button">Save</button>
+                <button class="btn btn-danger" id="add_education_cancel" type="button">Cancel</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

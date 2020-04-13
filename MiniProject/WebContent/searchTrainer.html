@@ -1,0 +1,50 @@
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+<script src="js/Trainer.js"></script>
+<script src="js/TrainerService.js"></script>
+<script src="js/TrainerUtil.js"></script>
+<script src="js/TrainerController.js"></script>
+
+<div class="container" id="search_trainer">
+
+	<div>
+		<h4>Search Trainer By Id / Email</h4>
+	</div>
+	<br>
+	<form id="search_Trainer_Form">
+		<div class="form-row">
+			<div class="col-md-4 mb-3">
+				<select class="custom-select" id="input_type" name="input_type"
+					required>
+					<option selected="selected" disabled value="">Choose
+						either Id/Email...</option>
+					<option value="trainerId">Trainer Id</option>
+					<option value="emailId">Email Id</option>
+				</select>
+			</div>
+			<div class="col-md-4 mb-3">
+				<input type="text" class="form-control" id="input_value"
+					name="input_value" placeholder="Trainer Id/Email Id" value=""
+					required>
+			</div>
+		</div>
+	</form>
+	<div class="form-row">
+		<div class="col-md-4 mb-3">
+			<button class="btn btn-primary" id="search_trainer_submit"
+				type="button">Search</button>
+		</div>
+	</div>
+
+</div>

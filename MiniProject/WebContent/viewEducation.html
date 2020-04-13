@@ -1,0 +1,175 @@
+<title>View Education</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+<script src="js/Education.js"></script>
+<script src="js/EducationService.js"></script>
+<script src="js/EducationUtil.js"></script>
+<script src="js/EducationController.js"></script>
+
+<div class="container" id="report_education_Container">
+
+	<div>
+		<h4>All Trainers</h4>
+		<br>
+		<table class="table table-striped">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="row">1</th>
+				</tr>
+				
+				<tr>
+					<th scope="col">Institute</th>
+					<td>Institute Name</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Degree</th>
+					<td>Degree</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Specialization</th>
+					<td>Specialization</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Start Year</th>
+					<td>Start year</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">End Year</th>
+					<td>End Year</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Duration</th>
+					<td>Duration</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">University</th>
+					<td>Duration</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Percentage</th>
+					<td>Percentage</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">City</th>
+					<td>City</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">State</th>
+					<td>State</td>
+				</tr>
+				
+				<tr>
+					<th scope="col">Country</th>
+					<td>Country</td>
+				</tr>
+				<tr>
+				<th></th>
+					<td><button type="button" class="btn btn-success" data-toggle="modal"
+							data-target="#exampleModal">Edit</button></td>
+				</tr>
+		</table>
+
+	</div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Edit
+					Education Details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form id="edit_Education_Form">
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="validationServer01">Institute</label> <input type="text" class="form-control"
+								id="specialization" name="specialization" placeholder="Institute" value="" required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationServer02">Degree</label> <input type="text" class="form-control"
+								id="degree" name="degree" placeholder="Degree" value="" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="validationServer02">Specialization</label> <input type="text"
+								class="form-control" id="specialization" name="specialization"
+								placeholder="Specialization" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">Start Year</label> <input type="text" class="form-control"
+								id="start_year" name="start_year" placeholder="Start Year" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">End Year</label> <input type="text" class="form-control"
+								id="end_year" name="end_year" placeholder="End Year" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">Duration</label> <input type="text" class="form-control"
+								id="duration" name="duration" placeholder="Duration" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">University</label> <input type="text" class="form-control"
+								id="university" name="university" placeholder="University" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">Percentage</label> <input type="text" class="form-control"
+								id="percentage" name="percentage" placeholder="Percentage" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">City</label> <input type="text" class="form-control"
+								id="city" name="city" placeholder="City" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">State</label> <input type="text" class="form-control"
+								id="state" name="state" placeholder="State" value="" required>
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<label for="validationServer03">Country</label> <input type="text" class="form-control"
+								id="country" name="country" placeholder="Country" value="" required>
+						</div>
+
+
+					</div>
+
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary" id="update-education">Update</button>
+			</div>
+		</div>
+	</div>
+</div>
+</html>
